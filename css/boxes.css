@@ -3,10 +3,11 @@ body {
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0.15em;
     background-color: #efefefef;
+    display: flex;
 }
 #page {
-    max-width: 940px;
-    min-width: 720px;
+    max-width: 1140px;
+    min-width: 1000px;
     margin: 10px auto;
     padding: 20px;
     border: 4px double #000;
@@ -22,11 +23,10 @@ ul {
     margin: 0px auto;
     border-top: 2px solid #000;
     border-bottom: 1px solid #000;
-    text-align: center;
 }
 li {
     display: inline; 
-    margin: 0 3px;
+    /* margin: 0 3px; */
 }
 p {
     text-align: center;
@@ -46,4 +46,30 @@ p {
  }
  img {
      width: 150px;
+ }
+
+ #navigation {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+ .specialize {
+    padding-bottom: 25px;
+    border-bottom: 2px solid grey;
+ }
+ #content-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ #content-container div:nth-child(1), div:nth-child(2) {
+     border-right: 2px solid black;
+ }
+ #content-container div {
+    padding: 20px 10px 0px 10px;
+ }
+
+ h3 {
+     text-align: center;
  }
